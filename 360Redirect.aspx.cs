@@ -43,6 +43,7 @@ public partial class _360Redirect : System.Web.UI.Page
         cookie.Expires = DateTime.Now.AddDays(Cps360Config.COOKIE_RD);
         cookie.Domain = Cps360Config.COOKIE_DOMAIN;
         cookie.Path = "/";
+        Response.Cookies.Add(cookie);
         #endregion
 
         #region 构造签名
