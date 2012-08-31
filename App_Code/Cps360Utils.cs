@@ -67,7 +67,7 @@ public class Cps360Utils
     {
         MD5 md5Hasher = MD5.Create();
 
-        byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(input));
+        byte[] data = md5Hasher.ComputeHash(Encoding.UTF8.GetBytes(input));
         StringBuilder sBuilder = new StringBuilder();
 
         for (int i = 0; i < data.Length; i++)
